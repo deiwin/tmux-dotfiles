@@ -2,3 +2,5 @@
 !/.gitignore.d
 !/.gitignore.d/tmux
 !/.tmux.conf
+!/bin
+!/bin/battery_status
