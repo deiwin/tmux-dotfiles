@@ -4,3 +4,4 @@
 !/.tmux.conf
 !/bin
 !/bin/battery_status
+!/bin/song_name
