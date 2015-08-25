@@ -1,0 +1,6 @@
+#!/bin/bash
+set -e
+
+git_root=$(git rev-parse --show-toplevel)
+git_root_folder=$(basename "$git_root")
+tmux rename-window "$git_root_folder"
