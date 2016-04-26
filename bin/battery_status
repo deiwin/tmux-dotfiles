@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-battery_status=$(pmset -g batt | grep Internal | cut -f2)
+battery_status=$(pmset -g batt | grep Internal | cut -f2 | ack -o '^.*?(?=\s*present:)')
 IFS=';' read -ra battery_status_array <<< "$battery_status"
 
 percentage=${battery_status_array[0]}
